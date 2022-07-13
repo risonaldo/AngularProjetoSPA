@@ -3,6 +3,7 @@ import { SobreComponent } from './institucional/sobre/sobre.component';
 import { ContatoComponent } from './institucional/contato/contato.component';
 import { HomeComponent } from './navegacao/home/home.component';
 import { Routes } from '@angular/router'
+import { ListaProdutosComponent } from './produtos/lista-produtos/lista-produtos.component';
 export const rootRouterConfig: Routes = [
     { path: '', 
     redirectTo: '/home', 
@@ -23,5 +24,9 @@ export const rootRouterConfig: Routes = [
     {
         path: 'feature-data-binding',
         component: DataBindingComponent
+    },
+    {
+        path: 'produtos',
+        component: ListaProdutosComponent
     }
 ];

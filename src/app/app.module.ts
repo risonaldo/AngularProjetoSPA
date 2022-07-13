@@ -12,6 +12,8 @@ import { ContatoComponent } from './institucional/contato/contato.component';
 import { SobreComponent } from './institucional/sobre/sobre.component';
 import { DataBindingComponent } from './demos/data-binding/data-binding.component';
 import { FormsModule } from '@angular/forms';
+import { ProdutoService } from './produtos/produtos.service';
+import { ListaProdutosComponent } from './produtos/lista-produtos/lista-produtos.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     ContatoComponent,
     SobreComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    ListaProdutosComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [
+    ProdutoService,
     {
       provide: APP_BASE_HREF, useValue: '/'
     }
