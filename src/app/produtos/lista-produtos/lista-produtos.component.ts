@@ -9,7 +9,7 @@ import { Produto } from '../produto';
 })
 export class ListaProdutosComponent implements OnInit {
 
-  public produtos: Produto[]  = [] ;
+  public produtos: Produto[];
   constructor(private produtoService: ProdutoService) { 
     
   }
